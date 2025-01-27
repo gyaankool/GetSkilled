@@ -1,0 +1,1197 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><htmlCode>
+<div id="root">
+    <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold">GetSkilled</a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-6">
+                        <a href="#hero" class="hover:text-blue-400 transition-colors duration-200">Home</a>
+                        <a href="#programs" class="hover:text-blue-400 transition-colors duration-200">Programs</a>
+                       <!--
+                        <a href="#methodology" class="hover:text-blue-400 transition-colors duration-200">Methodology</a>
+                        <a href="#projects" class="hover:text-blue-400 transition-colors duration-200">Projects</a>
+                        <a href="#internships" class="hover:text-blue-400 transition-colors duration-200">Internships</a>
+                        <a href="#courses" class="hover:text-blue-400 transition-colors duration-200">Courses</a>
+                        -->
+                        <a href="#aiPrep" class="hover:text-blue-400 transition-colors duration-200">AI Interview Prep</a>
+                        <a href="https://forms.gle/4W9Xg3YREqgkU65Q7" class="bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-800 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            <path class="close-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hero" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Home</a>
+                <a href="#programs" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Programs</a>
+               <!--
+                <a href="#methodology" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Methodology</a>
+                <a href="#projects" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Projects</a>
+                <a href="#internships" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Internships</a>
+                <a href="#courses" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">Courses</a>
+                -->
+                <a href="#aiPrep" class="block px-3 py-2 hover:bg-neutral-800 rounded-md">AI Interview Prep</a>
+                <a href="https://forms.gle/4W9Xg3YREqgkU65Q7" class="block px-3 py-2 bg-blue-600 text-center rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.querySelector('.menu-icon');
+        const closeIcon = document.querySelector('.close-icon');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Add scroll event listener for navbar background
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</div>
+</htmlCode>
+                <htmlcode id="el-koy8t5vc">
+<div id="root">
+    <section id="hero" class="pt-16 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white min-h-[70vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20" id="el-xrkyz4wb">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" id="el-1e2rokbf">
+                <div class="animate__animated animate__fadeInLeft" id="el-88wcqkc2">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-emerald-700 hover:text-emerald-600 transition-colors duration-300" id="el-9z16wfg1">
+    Empowering Learners Through Research and Innovation
+</h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8" id="el-7dtwtuxw">
+                        Transform your future with outcome-based, research-driven education and tools that prepare you for academic, professional, and career success across STEM, Commerce, Arts, and Technology fields.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4" id="el-h7w34aa2">
+                        <a href="#programs" class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors duration-300 text-center" id="el-pgdea82f">
+    Explore Programs
+</a>
+                        <a href="#aiPrep" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-neutral-900 transition-colors duration-300 text-center" id="el-582w3sn6">
+                            Start AI Interviews
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative animate__animated animate__fadeInRight" id="el-3ufecbc1">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt" id="el-0331xp76"></div>
+                    <div class="relative p-8 rounded-lg shadow-xl bg-green-50" id="el-c7padvzm">
+    <div class="text-center mb-8">
+        <h3 class="text-3xl font-bold mb-3 text-green-800">Get Guidance from the Best</h3>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 items-center justify-items-center">
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+    <div class="h-16 flex items-center justify-center">
+        <img src="https://dms.mydukaan.io/original/webp/media/6d9d9127-4ae7-4c2c-a863-d7067d20404c.png" alt="Boston Consulting Group Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+    </div>
+</div>
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+            <div class="h-24 flex items-center justify-center">
+                <div class="text-center">
+                    <img src="https://dms.mydukaan.io/original/webp/media/236160d4-f697-4afe-8ddb-e68f7afa9c28.png" alt="IIT Delhi Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+            <div class="h-24 flex items-center justify-center">
+                <img src="https://dms.mydukaan.io/original/webp/media/12c18f38-8f0d-435b-b123-59779bfbdde0.png" alt="Stanford Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+            </div>
+        </div>
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+            <div class="h-24 flex items-center justify-center">
+                <img src="https://dms.mydukaan.io/original/webp/media/e7b553cb-d32b-426a-8cb0-7a3ab1428e23.png" alt="BCG Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+            </div>
+        </div>
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+            <div class="h-24 flex items-center justify-center">
+                <img src="https://dms.mydukaan.io/original/webp/media/0d80841f-ff1a-4ad3-961a-daab7b49fcf4.png" alt="Kotak IB Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+            </div>
+        </div>
+        <div class="p-6 rounded-lg hover:bg-green-100 transition-colors duration-300">
+            <div class="h-24 flex items-center justify-center">
+                <img src="https://dms.mydukaan.io/original/webp/media/a7f6ad6f-89d9-4b0b-88c0-d28a6d22aa80.png" alt="IIT Ropar Logo" class="h-full w-auto object-contain transition-opacity duration-300 opacity-100" loading="lazy">
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlcode>
+              
+                <htmlcode id="el-hy7a0ah3">
+<div id="root">
+    <section id="mission" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-pd2mzua5">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-n2tkitc6">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6" id="el-09lhfwfg">Our Mission</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-8" id="el-tyazvlwj"></div>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto" id="el-6gjhwno3">
+                    To empower individuals with practical knowledge, hands-on experience, and industry-ready skills through innovative education programs and AI-powered interview preparation tools.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="el-nib3599c">
+                <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp" id="el-6algcng3">
+                    <div class="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4" id="el-i7eu1jcs">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-semibold mb-3" id="el-qybxxyjo">Practical Knowledge</h3>
+                    <p class="text-gray-600" id="el-n9jmuy4m">Hands-on learning experiences that translate directly to real-world applications.</p>
+                </div>
+
+                <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-ysdkmciy">
+                    <div class="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4" id="el-s7xfbyts">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-f1c8rb9h">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" id="el-9fssgyf6"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-semibold mb-3" id="el-r709mhjr">Industry Experience</h3>
+                    <p class="text-gray-600" id="el-qha9oxrd">Connect with professionals and gain real industry exposure through projects and internships.</p>
+                </div>
+
+                <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-ztcqsdd8">
+                    <div class="bg-green-600 text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4" id="el-jzepc8hf">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-semibold mb-3" id="el-5t4tl2y8">AI-Powered Growth</h3>
+                    <p class="text-gray-600" id="el-lxdr4kta">Advanced interview preparation tools with personalized feedback for continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlcode>
+              
+                <htmlcode id="el-owd8ukqv">
+<div id="root">
+    <section id="features" class="py-24 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-5ku66ir8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-ykk9agba">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6" id="el-7jghkufn">Why Choose GetSkilled?</h2>
+                <div class="w-24 h-1 bg-green-600 mx-auto mb-8" id="el-gcm3c0v5"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12" id="el-yg7esa5u">
+                <!-- Comprehensive Learning -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" id="el-p5mif17f">
+                    <div class="text-green-600 mb-6" id="el-6y7mfnp9">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-ll2b2spw">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" id="el-iujuw6v0"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-bold mb-4" id="el-i7mk2ll0">Comprehensive Learning</h3>
+                    <ul class="space-y-3 text-gray-600" id="el-9xlxktqb">
+                        <li class="flex items-start" id="el-kkgct5j0">
+                            <span class="text-blue-600 mr-2" id="el-n3a2e5k8">•</span>
+                            Research-based education and practical projects
+                        </li>
+                        <li class="flex items-start" id="el-oo75faf2">
+                            <span class="text-blue-600 mr-2" id="el-9pld2l1a">•</span>
+                            Professional internships tailored to your field
+                        </li>
+                        <li class="flex items-start" id="el-k4ibbb6m">
+                            <span class="text-blue-600 mr-2" id="el-j0usj6o7">•</span>
+                            Smart AI interview preparation tools
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Enhancement -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-cu3nj57r">
+                    <div class="text-green-600 mb-6" id="el-04wp5asv">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-paq0es1b">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" id="el-az6wgkzv"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-bold mb-4" id="el-9o25pp4c">Skill Enhancement</h3>
+                    <ul class="space-y-3 text-gray-600" id="el-j3uhr7fu">
+                        <li class="flex items-start" id="el-xp5h4tga">
+                            <span class="text-blue-600 mr-2" id="el-97biqclf">•</span>
+                            Hands-on learning with real-world applications
+                        </li>
+                        <li class="flex items-start" id="el-hj5xzgyg">
+                            <span class="text-blue-600 mr-2" id="el-rpou3ffs">•</span>
+                            Personalized AI feedback on performance
+                        </li>
+                        <li class="flex items-start" id="el-nty0hu2h">
+                            <span class="text-blue-600 mr-2" id="el-fs9xhj2l">•</span>
+                            Continuous skill development tracking
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Professional Opportunities -->
+                <div class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-gj5xaxt4">
+                    <div class="text-green-600 mb-6" id="el-jb6xainx">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-j8ysmazc">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" id="el-6dt3cocg"></path>
+    </svg>
+</div>
+                    <h3 class="text-xl font-bold mb-4" id="el-vkf26tt0">Professional Opportunities</h3>
+                    <ul class="space-y-3 text-gray-600" id="el-4wovnts7">
+                        <li class="flex items-start" id="el-epbcg4fs">
+                            <span class="text-blue-600 mr-2" id="el-w4wft854">•</span>
+                            Build comprehensive skill portfolios
+                        </li>
+                        <li class="flex items-start" id="el-5gy1ex3d">
+                            <span class="text-blue-600 mr-2" id="el-9gjcvhef">•</span>
+                            Access to industry partnerships
+                        </li>
+                        <li class="flex items-start" id="el-5vuwjev3">
+                            <span class="text-blue-600 mr-2" id="el-4fgozg8i">•</span>
+                            Connect with sector experts
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlcode>
+              
+                <htmlcode id="el-mtwxj669">
+<div id="root">
+    <section id="programs" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-1uw2ihv4">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Programs</h2>
+        <div class="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- STEM Education -->
+        <div class="bg-neutral-50 rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp">
+            <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">STEM Education</h3>
+            <ul class="space-y-3 text-gray-600">
+                <li>Research-based learning for BSc, MSc, B.Tech, and M.Tech students</li>
+                <li>Focus areas: Emerging technologies, robotics, AI, and scientific research</li>
+            </ul>
+        </div>
+
+        <!-- Commerce Programs -->
+        <div class="bg-neutral-50 rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Commerce Programs</h3>
+            <ul class="space-y-3 text-gray-600">
+                <li>Industry-aligned courses for BBA, MBA, B.Com, and M.Com students</li>
+                <li>Specializations: Finance, marketing, and business strategy and many more</li>
+            </ul>
+        </div>
+
+        <!-- Arts Programs -->
+        <div class="bg-neutral-50 rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Arts Programs</h3>
+            <ul class="space-y-3 text-gray-600">
+                <li>Creative projects and portfolio-building for BA and MA students</li>
+                <li>Emphasis on design, digital arts, and skill enhancement</li>
+            </ul>
+        </div>
+
+        <!-- AI Interview Prep -->
+        <div class="bg-neutral-50 rounded-xl shadow-lg p-6 transform hover:-translate-y-2 transition-all duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <div class="bg-green-600 rounded-full w-12 h-12 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4">AI Interview Prep</h3>
+            <ul class="space-y-3 text-gray-600">
+                <li>Smart AI Analysis with real-time feedback</li>
+                <li>Curated questions for various tech and non-tech roles</li>
+                <li>Performance tracking and analytics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center mt-12">
+        <a href="https://forms.gle/SPRMC92JzGDwrpLz7" class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors duration-300 animate__animated animate__fadeIn">
+            Get Started Today
+        </a>
+    </div>
+</div>
+    </section>
+</div>
+</htmlcode>
+              
+                
+                
+                <htmlcode id="el-hool38nw">
+
+</htmlcode>
+              
+              
+              
+                <htmlcode id="el-zo54seq0">
+<div id="root">
+    <section id="aiPrep" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-onnnh0x2">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-0m9ufbcq">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6" id="el-jueswktl">AI Interview Preparation</h2>
+    <div class="w-24 h-1 bg-green-600 mx-auto mb-8" id="el-sbupzybc"></div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto" id="el-qr2yykzp">Prepare for Any Company, Any Role, Any Interview Round</p>
+</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20" id="el-mcprnpfl">
+                <!-- Features List -->
+                <div class="space-y-8 animate__animated animate__fadeInLeft" id="el-35nwl6yh">
+                    <div class="flex items-start space-x-4" id="el-weeg8ybt">
+                        <div class="flex-shrink-0" id="el-tsic58es">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center" id="el-4wa2owa6">
+    <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
+</div>
+                        </div>
+                        <div id="el-o3flkw42">
+                            <h3 class="text-lg font-semibold mb-2" id="el-d9jo686y">Smart AI Analysis</h3>
+                            <p class="text-gray-600" id="el-it0yim6h">Real-time feedback on interview responses, including content, delivery, and body language</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4" id="el-2128kaqk">
+                        <div class="flex-shrink-0" id="el-86v5zz3g">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center" id="el-t5je2mo7">
+    <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+    </svg>
+</div>
+                        </div>
+                        <div id="el-pgb38blx">
+                            <h3 class="text-lg font-semibold mb-2" id="el-o5uyehhc">Curated Questions</h3>
+                            <p class="text-gray-600" id="el-j5g9wr1k">Practice with role-specific questions for software development, machine learning, data science, and product management and many more</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4" id="el-r5f2hx5t">
+                        <div class="flex-shrink-0" id="el-rxj2x9mt">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center" id="el-6dy3cqal">
+    <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+    </svg>
+</div>
+                        </div>
+                        <div id="el-znayc55i">
+                            <h3 class="text-lg font-semibold mb-2" id="el-yagyxcru">Performance Tracking</h3>
+                            <p class="text-gray-600" id="el-otno8e8k">Comprehensive analytics and personalized improvement tips</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="bg-neutral-50 rounded-xl p-8 shadow-lg animate__animated animate__fadeInRight" id="el-y3crlieh">
+                    <h3 class="text-2xl font-bold mb-6" id="el-livx8uj9">How It Works</h3>
+                    <div class="space-y-6" id="el-21pzn2v0">
+                        <div class="flex items-center space-x-4" id="el-3whagbqg">
+                            <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold" id="el-qxc4u9cv">1</div>
+                            <div id="el-0lhdq786">
+                                <h4 class="font-semibold" id="el-94f4ggzo">Create Profile</h4>
+                                <p class="text-gray-600" id="el-bh8nntvv">Sign up and set your target role</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4" id="el-hrqpm652">
+                            <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold" id="el-0k9lgib4">2</div>
+                            <div id="el-9ykxzvfn">
+                                <h4 class="font-semibold" id="el-oh9ok6u9">Practice Questions</h4>
+                                <p class="text-gray-600" id="el-3m22p42m">Access curated questions for your field</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4" id="el-ay2ktkgq">
+                            <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold" id="el-f51ccgvg">3</div>
+                            <div id="el-t4411cdz">
+                                <h4 class="font-semibold" id="el-1ptip1o9">Get Feedback</h4>
+                                <p class="text-gray-600" id="el-zbfdxbaq">Receive real-time AI analysis and tips</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4" id="el-5vt4s4zo">
+                            <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-bold" id="el-l8c5b1pl">4</div>
+                            <div id="el-qyjk2k65">
+                                <h4 class="font-semibold" id="el-0j6c9hid">Track Progress</h4>
+                                <p class="text-gray-600" id="el-nlsy7d04">Monitor your journey with detailed analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center animate__animated animate__fadeIn" id="el-njmztj64">
+                <a href="https://rzp.io/rzp/Gw9fQkVn" class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors duration-300" id="el-3ibu9zoo">
+    Start Your AI Interview Prep
+</a>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlcode>
+              
+                
+                <htmlcode id="el-vt14sqis">
+<div id="root">
+    <section id="metrics" class="py-24 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-2iu1k4n7">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Success Metrics</h2>
+        <div class="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Success Rate -->
+        <div class="bg-neutral-800 rounded-xl p-8 text-center transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp">
+            <div class="text-green-500 text-5xl font-bold mb-4">95%</div>
+            <div class="w-16 h-1 bg-green-600 mx-auto mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Success Rate</h3>
+            <p class="text-gray-400">Across education programs and interview preparation</p>
+        </div>
+
+        <!-- Success Stories -->
+        <div class="bg-neutral-800 rounded-xl p-8 text-center transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <div class="text-green-500 text-5xl font-bold mb-4">100+</div>
+            <div class="w-16 h-1 bg-green-600 mx-auto mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Success Stories</h3>
+            <p class="text-gray-400">Transforming careers and fostering innovation</p>
+        </div>
+
+        <!-- Industry Partners -->
+        <div class="bg-neutral-800 rounded-xl p-8 text-center transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+            <div class="text-green-500 text-5xl font-bold mb-4">50+</div>
+            <div class="w-16 h-1 bg-green-600 mx-auto mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Industry Partners</h3>
+            <p class="text-gray-400">Offering internships, mentorship, and insights</p>
+        </div>
+
+        <!-- Interview Prep Users -->
+        <div class="bg-neutral-800 rounded-xl p-8 text-center transform hover:scale-105 transition-transform duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+            <div class="text-green-500 text-5xl font-bold mb-4">10k+</div>
+            <div class="w-16 h-1 bg-green-600 mx-auto mb-4"></div>
+            <h3 class="text-xl font-semibold mb-2">Interview Prep Users</h3>
+            <p class="text-gray-400">Empowered through AI-driven tools</p>
+        </div>
+    </div>
+
+    <div class="mt-16 text-center animate__animated animate__fadeIn">
+        <div class="inline-flex items-center space-x-4 bg-neutral-800 rounded-lg p-6">
+            <svg class="h-8 w-8 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <p class="text-lg">Join thousands of successful learners who transformed their careers with GetSkilled</p>
+        </div>
+    </div>
+</div>
+    </section>
+</div>
+</htmlcode>
+              
+              
+                
+                <htmlcode id="el-nmmcv2zc">
+<div id="root">
+    <section id="partners" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-qsr24o6k">
+    <div class="text-center mb-20 animate__animated animate__fadeIn" id="el-k4vvsjv2">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8" id="el-s3qso6al">Our Partners</h2>
+        <div class="w-32 h-1.5 bg-green-600 mx-auto mb-10" id="el-dkeljq2r"></div>
+        <p class="text-2xl text-gray-600 max-w-4xl mx-auto" id="el-x5bf5y1z">Get guidance from the best alum of these institutions</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10" id="el-tefaeexj">
+        <!-- IIT Bombay -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" id="el-9gs4fakm">
+            <div class="text-center" id="el-p3cphcig">
+                <img src="https://dms.mydukaan.io/original/webp/media/33e8c294-8896-4559-bfc3-a852f81e4d9d.png" alt="Boston Consulting Group" class="h-20 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-y6omxep6">
+            </div>
+        </div>
+
+        <!-- IIT Delhi -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-8576o7bv">
+            <div class="text-center" id="el-jyifiwav">
+                <img src="https://dms.mydukaan.io/original/webp/media/7443b17a-b1f1-4d57-85ce-984b62ad6172.png" alt="IIT Delhi" class="h-24 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-qfa14fzz">
+            </div>
+        </div>
+
+        <!-- IIT Ropar -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-bzjf2jxa">
+            <div class="text-center" id="el-yh7ucfg0">
+                <img src="https://dms.mydukaan.io/original/webp/media/486dcede-06bd-4f0a-b107-02de964df766.png" alt="IIT Ropar" class="h-24 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-kv5ru03m">
+            </div>
+        </div>
+
+        <!-- Stanford University -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" style="animation-delay: 0.6s;" id="el-mkgi57a9">
+            <div class="text-center" id="el-of83wpi0">
+                <img src="https://dms.mydukaan.io/original/webp/media/72d7e421-3125-4d79-b45a-1c6e1701cb4c.png" alt="Stanford University" class="h-24 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-l4hpjyl7">
+            </div>
+        </div>
+
+        <!-- Kotak Investment Banking -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" style="animation-delay: 0.8s;" id="el-s8kgxqsj">
+            <div class="text-center" id="el-v1xsf9uv">
+                <img src="https://dms.mydukaan.io/original/webp/media/309247d0-9463-4b86-aba8-816ef50a76d6.png" alt="Kotak IB" class="h-24 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-mhhk5s60">
+            </div>
+        </div>
+
+        <!-- BCG -->
+        <div class="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center justify-center animate__animated animate__fadeInUp" style="animation-delay: 1s;" id="el-h9a9smt6">
+            <div class="text-center" id="el-8vef8wt4">
+                <img src="https://dms.mydukaan.io/original/webp/media/edb320ac-e7b7-441d-b719-2d58dab8a67e.png" alt="BCG" class="h-24 w-auto transition-opacity duration-300 opacity-100" loading="lazy" id="el-9ihbf2z9">
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-20 text-center animate__animated animate__fadeIn" id="el-xf313fyn">
+        <div class="inline-flex items-center space-x-6 bg-neutral-50 rounded-xl p-8 shadow-lg" id="el-ruv371d7">
+            <svg class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-sugd49tv">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+</svg>
+           <p class="text-xl text-gray-700" id="el-p76cda48">Join GetSkilled to be the best in your Domain</p> 
+        </div>
+    </div>
+</div>
+    </section>
+</div>
+</htmlcode>
+              
+              
+               <htmlcode id="el-lj7cp262"> 
+<div id="root">
+    <section id="testimonials" class="py-24 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-mtfcephl">
+            <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-tlcdfb2m">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6" id="el-wwdryruk">Success Stories</h2>
+    <div class="w-24 h-1 bg-green-600 mx-auto mb-8" id="el-k0z67q8z"></div>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto" id="el-81h004vv">Hear from our alumni who transformed their careers with GetSkilled</p>
+</div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="el-e1k4r892">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp" id="el-ou7cgsmh">
+                    <div class="flex items-center mb-6" id="el-i4c303qr">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center" id="el-xtcn6q7z">
+    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+    </svg>
+</div>
+                        <div class="ml-4" id="el-vs71d6lw">
+                            <h4 class="font-bold" id="el-gxb6ljxw">STEM Graduate</h4>
+                            <p class="text-gray-600" id="el-yuucbp6d">B.Tech, IIT Delhi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4" id="el-mq4pbjsm">"The AI interview preparation helped me secure my dream job. The personalized feedback was invaluable."</p>
+                    <div class="flex text-yellow-400" id="el-cu9ubtkx">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-cp0nk876"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-yttebyex"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-oz4l3oju"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-xxhv1eig"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-qhdm6drk"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-21j9c9xl"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-b3byifus"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-mfwfi8it"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-vjr4eg7z"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-l1nwhcpn"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;" id="el-jkv5pyfd">
+                    <div class="flex items-center mb-6" id="el-d17yq4kz">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center" id="el-qsjk7wyu">
+    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+    </svg>
+</div>
+                        <div class="ml-4" id="el-z59ehh6f">
+                            <h4 class="font-bold" id="el-s88bcq92">Commerce Graduate</h4>
+                            <p class="text-gray-600" id="el-gq1jogf9">MBA, IIM</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4" id="el-wn0h7u4q">"The practical projects and industry exposure made a huge difference in my career trajectory."</p>
+                    <div class="flex text-yellow-400" id="el-kx39me9y">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-sq2dgm4m"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-vceoqbc6"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-z06jtrjd"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-y8ux9sbu"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-2cs6judk"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-3da9h6c3"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-xqwtgake"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-62lpawma"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-pbsha1p4"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-jxl6c0av"></path></svg>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;" id="el-gpd43cvx">
+                    <div class="flex items-center mb-6" id="el-d8hwn05u">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center" id="el-1jdlknsu">
+    <svg class="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+    </svg>
+</div>
+                        <div class="ml-4" id="el-rnfqlmie">
+                            <h4 class="font-bold" id="el-iine2q0g">Arts Student</h4>
+                            <p class="text-gray-600" id="el-8q9anklq">Digital Arts Program</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4" id="el-wg4g5f1g">"The creative portfolio development and industry connections helped me land my first design job."</p>
+                    <div class="flex text-yellow-400" id="el-5wi57mdj">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-jem019cs"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-s6u9wivz"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-k5922ytn"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-rzlcxekh"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-mzb4hgbm"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-8qxw89it"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-a1vrjl81"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-hz03y4d8"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-yiejtgj0"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" id="el-hhas9abu"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlcode>
+              
+                
+                <htmlcode id="el-v1xfzvyu">
+<div id="root">
+    <section class="py-24 bg-neutral-800 text-white" id="contact">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="el-mnedx9s4">
+        <div class="text-center mb-16 animate__animated animate__fadeIn" id="el-34gijjte">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6" id="el-crn625o1">Our Speakers &amp; Mentors</h2>
+            <div class="w-24 h-1 bg-green-600 mx-auto mb-8" id="el-89nuldwj"></div>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto" id="el-moehb4w9">Learn from industry experts and experienced professionals who will guide you through your journey</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24" id="el-6xo7oqdi">
+            <!-- Mentor Card 1- Vivek Narayan  -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-qzntqr69">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-6yy0k95b">
+                    <img src="./Vivek_narayan.jpeg" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-3pe5wfc4">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-njlp9wf1">Vivek Narayan </h3>
+                <p class="text-green-400 mb-3" id="el-lkciu6ad">IIT BHU and IIM-Calcutta</p>
+                <p class="text-gray-300 text-sm" id="el-7l1wql9r">Over 30 years of Corporate Research and Academic Experience</p>
+            </div>
+
+            <!-- Mentor Card 2- Aman Singh  -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-ewev8si1">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-cmyrn2lj">
+                    <img src="./Aman_Singh.png" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-03g4h789">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-zz87lo12">Aman Singh</h3>
+                <p class="text-green-400 mb-3" id="el-z1usp0i7">IIT Delhi </p>
+                <p class="text-gray-300 text-sm" id="el-u6heb0ia">Tech @ Skyflow, Ex- founder of SayF , Expanded the business to achieve an annual GMV of 160 crore</p>
+            </div>
+
+            <!-- Mentor Card 3- Paras Gupta-->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-nmm19pw7">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-dzx57ue9">
+                    <img src="./paras_gupta.jpeg" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-scvtuupq">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-g9d50iw1">Paras Gupta </h3>
+                <p class="text-green-400 mb-3" id="el-2lazpvcl">Stanford and IIT Delhi</p>
+                <p class="text-gray-300 text-sm" id="el-uxf72dpx">Founder @ Yelow Payments</p>
+            </div>
+
+            <!-- Mentor Card -Lokap Sahu -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-162j8w07">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-gfo770n6">
+                    <img src="./Lokap Sahu.jpg" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-ybratuqb">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-z97rxjck">Lokap Sahu</h3>
+                <p class="text-green-400 mb-3" id="el-5tbum391">IIT Bombay</p>
+                <p class="text-gray-300 text-sm" id="el-kqkhbxke">Founder @ languify , Raised $180K Seed Round , Backed by Titan Capital</p>
+            </div>
+
+            <!-- Mentor Card 5 -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-qqrmphah">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-i2pj3gb2">
+                    <img src="./mohak_sahu.png" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-n8k2qp7b">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-vl9yjkfl">Mohak Sahu</h3>
+                <p class="text-green-400 mb-3" id="el-etqaejb8">IIT Bombay </p>
+                <p class="text-gray-300 text-sm" id="el-ssqa2krl">Co-Founder and CTO @ languify</p>
+            </div>
+
+            <!-- Mentor Card 6 -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-4029xcov">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-xhohtqr8">
+                    <img src="./Dushyant.png" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-giuvmk20">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-j4iyurnk">Dushyant Garg</h3>
+                <p class="text-green-400 mb-3" id="el-cs59c7ul">All India Rank 38 (CA), Delhi University
+
+                </p>
+                <p class="text-gray-300 text-sm" id="el-kkjix7bl">Ex - Kotak (Investment banking) , Ex-BCG (Boston Consulting Group)</p>
+            </div>
+
+            <!-- Mentor Card 7 Dushyant Garg -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-k5avnfoo">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-8qoo0f8j">
+                    <img src="./shivam_laktariya.png" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-z8mu23c1">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-py8g3eab">Shivam Laktariya</h3>
+                <p class="text-green-400 mb-3" id="el-6h6b4fux">Ahmedabad Univeristy</p>
+                <p class="text-gray-300 text-sm" id="el-1khlp0c7">Product Manager @ Dexif , Ex founder of Navajuni (Top short format news app in ahemdabad)</p>
+            </div>
+
+            <!-- Mentor Card 8 Yugraj Shukla -->
+            <div class="bg-neutral-700 rounded-xl p-6 text-center animate__animated animate__fadeIn" id="el-k5avnfoo">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden" id="el-8qoo0f8j">
+                    <img src="./yug.png" alt="Image unavailable" class="w-full h-full object-cover transition-opacity duration-300 opacity-100 error-image" loading="lazy" id="el-z8mu23c1">
+                </div>
+                <h3 class="text-xl font-bold mb-2" id="el-py8g3eab">Yugraj Shukla</h3>
+                <p class="text-green-400 mb-3" id="el-6h6b4fux">National Institute of Technology</p>
+                <p class="text-gray-300 text-sm" id="el-1khlp0c7">Ex-founder @ Faebikes & Charzer , Ex BCG(Boston Consulting Group)</p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</htmlcode>
+              
+              
+                <htmlcode id="el-ucvw0vs3">
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4" id="el-j7z4iibv">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center" id="el-h041df1f">
+        <div class="space-y-4 text-center md:text-left" id="el-f3y9mpz6">
+          <h3 class="text-xl font-bold mb-4" id="el-a4n42ump">GetSkilled <p style="font-size: 12px;">A unit of gyaankool Research labs</p></h3>
+          <p class="text-neutral-400" id="el-epjo41jx">Empowering learners through innovation and practical knowledge.</p>
+          <div class="flex space-x-4 mt-4 justify-center md:justify-start" id="el-1lcwod5z">
+            <a href="https://www.linkedin.com/showcase/getskilledofficial/?viewAsMember=true" class="text-neutral-400 hover:text-white" id="el-0cbmhlro"><i class="fab fa-linkedin" id="el-k9fsczhc"></i></a>
+            <a href="https://www.instagram.com/getskilledofficial/" class="text-neutral-400 hover:text-white" id="el-uyzwbtun"><i class="fab fa-instagram" id="el-kdj6m8u4"></i></a>
+          </div>
+        </div>
+        
+        <div class="text-center md:text-left" id="el-9hki3dx8">
+          <h4 class="text-lg font-semibold mb-4" id="el-pglmwgsv">Quick Links</h4>
+          <ul class="space-y-2 text-neutral-400" id="el-vczbango">
+            <li id="el-wnwnyiuu"><a href="#" class="hover:text-white" id="el-mzq8txbg">Programs</a></li>
+            <li id="el-jn3n51pq"><a href="#" class="hover:text-white" id="el-wmx2d10f">Methodology</a></li>
+            
+            <li id="el-x39u03za"><a href="#" class="hover:text-white" id="el-oi37biu5">AI Interview Prep</a></li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left" id="el-pjrp1h6d">
+          <h4 class="text-lg font-semibold mb-4" id="el-li5viop3">Contact Us</h4>
+          <ul class="space-y-2 text-neutral-400" id="el-rxxgdo6t">
+            <li id="el-gsa7qb1z">Phone: +91 9591009606</li>
+            <li id="el-8eu06234">Email: gyaankool@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-left" id="el-l1led7jj">
+        </div>
+      </div>
+
+      <div class="border-t border-neutral-800 mt-12 pt-8 text-center text-neutral-400" id="el-624prxy5">
+        <p id="el-ym5tyuxt">© 2024 GetSkilled. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlcode>
+              
